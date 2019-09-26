@@ -15,10 +15,16 @@ app.use(bodyParser.json());
 app.get('/', (req, res, next) => {
   res.send(layout(''));
 });
-
-
-
 const PORT = 3000;
-app.listen(PORT, () => {
+
+const init = async() => {
+  await models.User.sync()
+  await models.Page.sync()
+
+
+  app.listen(PORT, () => {
  console.log(`App listening in port ${PORT}`);
 });
+}
+
+
