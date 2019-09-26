@@ -28,32 +28,24 @@ module.exports = () =>
       </div>
 
       <div class="form-group">
-        <label for="page-content" class="col-sm-2 control-label"
+        <label for="pageContent" class="col-sm-2 control-label"
           >Page Content</label
         >
         <div class="col-sm-10">
           <input
-            id="page-content"
-            name="page-content"
+            id="pageContent"
+            name="pageContent"
             type="text"
             class="form-control"
           />
         </div>
       </div>
-
       <div class="form-group">
-        <label for="title" class="col-sm-2 control-label">Page Title</label>
+        <label for="status" class="col-sm-2 control-label">Page Status</label>
         <div class="col-sm-10">
-          <input id="title" name="title" type="text" class="form-control" />
+          <input id="status" name="status" type="text" class="form-control" />
         </div>
       </div>
-        <div class="form-group">
-          <label for="status" class="col-sm-2 control-label">Page Status</label>
-          <div class="col-sm-10">
-            <input id="status" name="status" type="text" class="form-control" />
-          </div>
-        </div>
-
 
       <div class="col-sm-offset-2 col-sm-10">
         <button type="submit" class="btn btn-primary">submit</button>
