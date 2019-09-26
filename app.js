@@ -2,6 +2,7 @@ const morgan = require('morgan');
 const express = require('express');
 const bodyParser = require("body-parser");
 const layout = require('./views/layout');
+const { db } = require("./models");
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(bodyParser.json());
 app.get('/', (req, res, next) => {
   res.send(layout(''));
 });
+
 
 
 const PORT = 3000;
